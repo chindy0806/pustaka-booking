@@ -1,46 +1,29 @@
 <html>
+    <head>
+        <title><?=$judul;?></title>
+    </head>
+    <body>
+        <center><h2><?=$judul;?></h2></center>
+            <table width="40%" border="0" cellpadding="5" align="center">
+                <tr>
+                    <td width="27%">
+                        Kode MTK</td>
+                    <td  width="73%"><?=$kode;?></td>
+                </tr>
+                <tr>
+                    <td width="27%">
+                        Nama MTK</td>
+                    <td  width="73%"><?=$nama;?></td>
+                </tr>
 
-<head>
-    <title>Tampil Data Matakuliah</title>
-</head>
+                <tr>
+                    <td width="27%">
+                        SKS</td>
+                    <td  width="73%"><?=$sks;?></td>
+                </tr>                  
+                
 
-<body>
-    <center>
-        <table>
-            <tr>
-                <th colspan="3">
-                    Tampil Data Mata Kuliah
-                </th>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <th>Kode MTK</th>
-                <th>:</th>
-                <td>
-                    <?= $kode; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>Nama MTK</td>
-                <td>:</td>
-                <td>
-                    <?= $nama; ?>
-                </td>
-            </tr>
-            <tr>
-                <td>SKS</td>
-                <td>:</td>
-                <td>
-                    <?= $sks; ?>
-                </td>
-             </tr>
-            <tr>
-                <td colspan="3" align="center">
-                    <a href="<?= base_url('matakuliah'); 
-?>">Kembali</a>
-                </td>
+            </table>
 
+    </body>
+</html>
